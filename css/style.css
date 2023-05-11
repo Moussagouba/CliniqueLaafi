@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.imgr {
+  width: 290px;
+  height: 80px;
+}
+.moi {
+  background-color: #046380;
+}
+.bob {
+  height: 80px;
+  width: 200px;
+}
