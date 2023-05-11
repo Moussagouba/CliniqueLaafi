@@ -16,3 +16,20 @@ if (exampleModal) {
     modalBodyInput.value = recipient
   })
 }
+
+const video = document.getElementById("my-video");
+const playPauseButton = document.getElementById("play-pause-btn");
+
+playPauseButton.addEventListener("click", function() {
+  if (video.paused) {
+    video.play();
+    playPauseButton.classList.remove("play-btn");
+    playPauseButton.classList.add("pause-btn");
+    playPauseButton.innerHTML = '<i class="fas fa-pause"></i>';
+  } else {
+    video.pause();
+    playPauseButton.classList.remove("pause-btn");
+    playPauseButton.classList.add("play-btn");
+    playPauseButton.innerHTML = '<i class="fas fa-play"></i>';
+  }
+});
