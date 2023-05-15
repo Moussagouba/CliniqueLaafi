@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visiteur/Patient</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blob.css">
+</head>
+<header>
+    <div class="container-fluid d-none d-lg-block  bg-white">
+        <div class="row ">
+            <div class="d-flex justify-content-center text-decoration-none justify-content-around bg-white">
+                <div class="item col-md-5 "><a href="tel:+3337373"><img src="images/icons8-phone-48.png" alt=""> <b
+                            class="text-decoration-none text-danger">
+                            URGENCE</b></a>
+                </div>
+                <div class="item  col-md-5  "><a href="index.html"><img class="imgr"
+                            src="images/clinique-laafi-high-resolution-logo-black-on-transparent-background.png"
+                            alt=""></a></div>
+                <div class="item col-md-2 py-3"><button type="button" class="btn btn-outline-info"
+                        style="background-color: rgb(0, 255, 0); color: white;" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal" data-bs-whatever="clinique@laafi.com">Rendez-vous</button>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header prend">
+                                    <h1 class="modal-title  fs-5" id="exampleModalLabel">Prendre un Rendez-vous</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="recipient-name" class="col-form-label">Votre adresse
+                                                émail</label>
+                                            <input type="text" class="form-control" id="recipient-name">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="message-text" class="col-form-label">Message:</label>
+                                            <textarea class="form-control" id="message-text"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Sortir</button>
+                                    <button type="button" class="btn btn-primary">Envoyez</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark  moi" aria-label="Offcanvas navbar large">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="bob" src="images/logo/png/logo-no-background.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
+                aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2"
+                aria-labelledby="offcanvasNavbar2Label">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="visiteur.html">Patients & visiteurs</a>
+                        </li>
+                        <li class="btn-group dropstart">
+                            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Spécialistes & Services
+                            </button>
+                            <ul class="dropdown-menu bg-info">
+                                <li><a class="dropdown-item" href="spe.html">Spécialité</a></li>
+                                <li><a class="dropdown-item" href="spe.html">Services</a></li>
+                                <li><a class="dropdown-item" href="#">Faire un don</a></li>
+                            </ul>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="frirr" style="background-image: url('images/caregiver-nurse_42MFIEVS0N.jpg');height: 800px;background-repeat: no-repeat;
+        background-size: cover;">
+        <h2 class="text-primary " style="position: relative; top: 60%;">Nous sommes là quand
+            vous avez besoin de nous — pour tous les soins
+            dans
+            le
+            monde.
+        </h2>
+    </section>
+
+    <section class="glass py-5">
+        <h1 class="text-center text-light">INFOS UTILES</h1>
+        <div class="container d-flex  ner">
+            <div class="row">
+                <div class="card cardof mt-4 col-xs-12 col-md-3 mx-2 mx-auto">
+                    <h1 class="title text-success">Contact ligne verte</h1>
+                    <p class="subtitle">
+
+                        pour faciliter le contact avec les médecins généralistes et référents..</p>
+                    <button class="btn">Explorer</button>
+                </div>
+                <div class="blob"></div>
+
+                <div class="card cardof mx-2 mx-auto  mt-4 col-xs-12 col-md-3">
+                    <h1 class="title text-primary">visite médical
+                    </h1>
+                    <p class="subtitle">
+                        pour faciliter le contact avec les médecins généralistes et référents.</p>
+                    <button class="btn">Explorer</button>
+                </div>
+
+                <div class="blob"></div>
+                <div class="card cardof col-xs-12 p-3 mt-4  col-md-3 mx-2 mx-auto">
+                    <h1 class="title">DON DE SANG</h1>
+                    <p class="subtitle">Sauvez des vies en donnant votre sang , fiche atience offert </p>
+                    <button class="btn">Explorer</button>
+                </div>
+                <div class="blob"></div>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="feaure ">
+        <div class="container px-4 py-5" id="featured-3">
+            <h2 class="pb-2 text-primary border-bottom">POURQUOI CHOISIR NOTRE CLINIQUE LAAFI?</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                <div class="feature col">
+                    <div
+                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="319" height="159" viewBox="0 0 319 159">
+                            <g id="patient-centered-care" transform="translate(705 183)">
+                                <g id="BG_Placeholder" data-name="BG Placeholder" transform="translate(-578 -137)">
+                                    <rect id="Rectangle_8" data-name="Rectangle 8" width="64" height="64" fill="none" />
+                                </g>
+                                <g id="Layer_2" data-name="Layer 2" transform="translate(-578 -137)">
+                                    <g id="Rectangle_9" data-name="Rectangle 9" transform="translate(-127 -46)"
+                                        fill="#13d3e9" stroke="#707070" stroke-width="1">
+                                        <rect width="319" height="159" stroke="none" />
+                                        <rect x="0.5" y="0.5" width="318" height="158" fill="none" />
+                                    </g>
+                                    <path id="Tracé_1" data-name="Tracé 1"
+                                        d="M32,3A29,29,0,1,1,3,32,29,29,0,0,1,32,3m0-3A32,32,0,1,0,64,32,32,32,0,0,0,32,0Z"
+                                        fill="#57585f" />
+                                    <path id="Tracé_2" data-name="Tracé 2"
+                                        d="M32,11A21,21,0,1,1,11,32,21,21,0,0,1,32,11m0-3A24,24,0,1,0,56,32,24,24,0,0,0,32,8Z"
+                                        fill="#57585f" />
+                                    <path id="Tracé_3" data-name="Tracé 3"
+                                        d="M37.67,22h.23a6.41,6.41,0,0,1,4.25,1.92,6.82,6.82,0,0,1,1.71,3C45.17,33.86,36.94,41,32,44c-4.94-3-13.17-10.12-11.86-17a6.82,6.82,0,0,1,1.71-3,6.36,6.36,0,0,1,2.95-1.72,6.5,6.5,0,0,1,1.3-.2h.27A5.84,5.84,0,0,1,32,26.13,5.93,5.93,0,0,1,37.67,22m0-3h0A8.87,8.87,0,0,0,32,21a9,9,0,0,0-2.81-1.54,9.33,9.33,0,0,0-2.8-.46H26a9.57,9.57,0,0,0-1.93.29,9.39,9.39,0,0,0-4.36,2.54,9.91,9.91,0,0,0-2.46,4.32v.22c-.74,3.93.72,8.24,4.23,12.47a37.87,37.87,0,0,0,9,7.69l1.55.94,1.55-.94a37.87,37.87,0,0,0,9-7.69c3.51-4.23,5-8.54,4.23-12.47v-.22a10,10,0,0,0-2.46-4.33A9.39,9.39,0,0,0,40,19.32,8.67,8.67,0,0,0,38,19Z"
+                                        fill="#57585f" />
+                                </g>
+                            </g>
+                        </svg>
+
+                    </div>
+                    <h3 class="fs-2">Soins centrés sur le patient </h3>
+                    <p>Nous ne nous soucions pas seulement de votre état de santé. Nous nous soucions de vous. Cela
+                        signifie que nos fournisseurs prennent le temps d'écouter ce qui est important pour vous avant
+                        de recommander les prochaines étapes.</p>
+                    <a href="#" class="icon-link">
+                        En savoir plus
+                        <svg class="bi">
+                            <use xlink:href="#chevron-right"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="feature col">
+                    <div
+                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="319" height="159" viewBox="0 0 319 159">
+                            <g id="national-recognition" transform="translate(127 132)">
+                                <g id="BG_Placeholder" data-name="BG Placeholder" transform="translate(0 -84.198)">
+                                    <rect id="Rectangle_12" data-name="Rectangle 12" width="64" height="64"
+                                        transform="translate(0 0.198)" fill="none" />
+                                </g>
+                                <g id="Rectangle_11" data-name="Rectangle 11" transform="translate(-127 -132)"
+                                    fill="#00b9ff" stroke="#707070" stroke-width="1">
+                                    <rect width="319" height="159" stroke="none" />
+                                    <rect x="0.5" y="0.5" width="318" height="158" fill="none" />
+                                </g>
+                                <g id="Layer_2" data-name="Layer 2" transform="translate(0 -84.198)">
+                                    <path id="Tracé_4" data-name="Tracé 4"
+                                        d="M50,3V27h3V38H50V56.64L32.48,60.92,14,56.62V38H11V27h3V3H50m3-3H11V24H8V41h3V59l21.5,5L53,59V41h3V24H53Z"
+                                        fill="#57585f" />
+                                    <path id="Tracé_5" data-name="Tracé 5" d="M53,27V38H11V27H53m3-3H8V41H56Z"
+                                        fill="#57585f" />
+                                    <path id="Tracé_6" data-name="Tracé 6"
+                                        d="M8,31V41H4.33l1.48-4,.39-1-.39-1L4.33,31H8m3-3H0l3,8L0,44H11Z"
+                                        fill="#57585f" />
+                                    <path id="Tracé_7" data-name="Tracé 7"
+                                        d="M59.67,31l-1.48,4-.39,1,.39,1,1.48,4H56V31h3.67M64,28H53V44H64l-3-8Z"
+                                        fill="#57585f" />
+                                </g>
+                            </g>
+                        </svg>
+
+                    </div>
+                    <h3 class="fs-2">Reconnaissance nationale </h3>
+                    <p>La Clinic laafi est régulièrement classée parmi les meilleurs hôpitaux du pays par US News &
+                        World Report . Newsweek nous a également désignés comme l'un des meilleurs hôpitaux du monde..
+                    </p>
+                    <a href="#" class="icon-link">
+                        En savoir plus
+                        <svg class="bi">
+                            <use xlink:href="#chevron-right"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="feature col">
+                    <div
+                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="319" height="159" viewBox="0 0 319 159">
+                            <g id="skilled-collaborative-providers" transform="translate(128 45)">
+                                <g id="BG_Placeholder" data-name="BG Placeholder">
+                                    <rect id="Rectangle_14" data-name="Rectangle 14" width="64" height="64"
+                                        fill="none" />
+                                    <g id="Rectangle_13" data-name="Rectangle 13" transform="translate(-128 -45)"
+                                        fill="#00b9ff" stroke="#707070" stroke-width="1">
+                                        <rect width="319" height="159" stroke="none" />
+                                        <rect x="0.5" y="0.5" width="318" height="158" fill="none" />
+                                    </g>
+                                </g>
+                                <g id="Layer_2" data-name="Layer 2">
+                                    <path id="Tracé_8" data-name="Tracé 8"
+                                        d="M10.5,20.86a3.86,3.86,0,1,1-3.86,3.85,3.86,3.86,0,0,1,3.86-3.85m0-3a6.86,6.86,0,1,0,6.86,6.85,6.86,6.86,0,0,0-6.86-6.85Z"
+                                        fill="#57585f" />
+                                    <path id="Tracé_9" data-name="Tracé 9"
+                                        d="M13.48,35.43A4.53,4.53,0,0,1,18,40v3.19H3V40a4.53,4.53,0,0,1,4.52-4.52h6m0-3h-6A7.54,7.54,0,0,0,0,40v6.19H21V40a7.54,7.54,0,0,0-7.52-7.52Z"
+                                        fill="#57585f" />
+                                    <path id="Tracé_10" data-name="Tracé 10"
+                                        d="M53.5,20.86a3.86,3.86,0,1,1-3.86,3.85,3.86,3.86,0,0,1,3.86-3.85m0-3a6.86,6.86,0,1,0,6.86,6.85,6.86,6.86,0,0,0-6.86-6.85Z"
+                                        fill="#57585f" />
+                                    <path id="Tracé_11" data-name="Tracé 11"
+                                        d="M56.48,35.43A4.53,4.53,0,0,1,61,40v3.19H46V40a4.53,4.53,0,0,1,4.52-4.52h6m0-3h-6A7.54,7.54,0,0,0,43,40v6.19H64V40a7.54,7.54,0,0,0-7.52-7.52Z"
+                                        fill="#57585f" />
+                                    <path id="Tracé_12" data-name="Tracé 12"
+                                        d="M31.73,38.71a3.86,3.86,0,1,1-3.85,3.86,3.86,3.86,0,0,1,3.85-3.86m0-3a6.86,6.86,0,1,0,6.86,6.86A6.86,6.86,0,0,0,31.73,35.71Z"
+                                        fill="#57585f" />
+                                    <path id="Tracé_13" data-name="Tracé 13"
+                                        d="M34.71,53.28a4.52,4.52,0,0,1,4.52,4.53V61h-15V57.81a4.53,4.53,0,0,1,4.53-4.53h5.95m0-3H28.76a7.55,7.55,0,0,0-7.53,7.53V64h21V57.81a7.55,7.55,0,0,0-7.52-7.53Z"
+                                        fill="#57585f" />
+                                    <path id="Tracé_14" data-name="Tracé 14"
+                                        d="M31.73,3a3.86,3.86,0,1,1-3.85,3.86A3.86,3.86,0,0,1,31.73,3m0-3a6.86,6.86,0,1,0,6.86,6.86A6.86,6.86,0,0,0,31.73,0Z"
+                                        fill="#57585f" />
+                                    <path id="Tracé_15" data-name="Tracé 15"
+                                        d="M34.71,17.57a4.52,4.52,0,0,1,4.52,4.52v3.2h-15v-3.2a4.53,4.53,0,0,1,4.53-4.52h5.95m0-3H28.76a7.55,7.55,0,0,0-7.53,7.52v6.2h21v-6.2a7.54,7.54,0,0,0-7.52-7.52Z"
+                                        fill="#57585f" />
+                                </g>
+                            </g>
+                        </svg>
+
+                    </div>
+                    <h3 class="fs-2">Fournisseurs collaboratifs </h3>
+                    <p>Vous serez pris en charge par des experts certifiés et formés par des bourses qui travaillent
+                        ensemble pour créer un plan de traitement juste pour vous. Seules les normes les plus élevées
+                        garantissent d'excellents résultats ..</p>
+                    <a href="#" class="icon-link">
+                        En savoir plus
+                        <svg class="bi">
+                            <use xlink:href="#chevron-right"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="local">
+        <div class="container">
+            <h2 class="pb-2 text-primary border-bottom">Emplacements et directions</h2>
+            <div class="row">
+                <div class="col-6 col-sm-12 col-md-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3899.097593337745!2d-2.3872436260332526!3d12.241670930463146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xe2e0305c30a0c49%3A0xe422089e07ddd765!2sVillage%20Laafi!5e0!3m2!1sfr!2sbf!4v1684156643445!5m2!1sfr!2sbf"
+                        width="650" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+
+<footer>
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+
+
+    <footer class=" bg-primary text-center text-lg-start text-white">
+        <div class="blob"></div>
+        <div class="container p-4">
+            <!--Grid row-->
+            <div class="row my-4">
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+
+                    <div class="  d-flex align-items-center justify-content-center mb-4 mx-auto"
+                        style="width: 150px; height: 150px;">
+                        <img src="images/logo/clinique-laafi-low-resolution-logo-white-on-transparent-background.png"
+                            height="70" alt="" loading="lazy" />
+
+                    </div>
+                    <hr class="" style="opacity: 100%; height: 14px;">
+                    <p class="text-center">Centre Hospitalier de LAAFI
+                        9 avenue Sankara
+                        7500 Tournai
+                        Tel +226 69 333 111
+                        N° d'entreprise : 0876.107.364</p>
+
+                    <ul class="list-unstyled d-flex flex-row justify-content-center">
+                        <li>
+                            <a class="text-white px-2" href="#!">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-white px-2" href="#!">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-white ps-2" href="#!">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="col-lg-6 text-decoration-none col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">PATIENTS / VISITEURS</h5>
+
+                    <ul class="list-unstyled text-decoration-none">
+                        <li class="mb-2">
+                            <a href="#!" class="text-white text-decoration-none">Consultations</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="text-white text-decoration-none">Hospitalisation</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="text-white text-decoration-none">Visiteurs</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="text-white text-decoration-none">Services d’aide aux
+                                patients
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="text-white text-decoration-none">
+                                Infos pratiques</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="text-white text-decoration-none">
+                                Accessibilité aux
+                                soins de santés</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="text-white text-decoration-none">Règlement Général sur
+                                la Protection des Données</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4"> ACCÈS RAPIDE</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="#!" class="text-white text-decoration-none"><i class="fas fa-paw pe-3"></i>Prise de
+                                rendez-vous</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="text-white text-decoration-none"><i class="fas fa-paw pe-3"></i>Paiement
+                                et
+                                facturation</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="text-white text-decoration-none"><i
+                                    class="fas fa-paw pe-3"></i>Maternité</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="text-white text-decoration-none"><i class="fas fa-paw pe-3"></i>
+                                Professionnels de
+                                santé</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="text-white text-decoration-none"><i class="fas fa-paw pe-3"></i>Emplois
+                                et stages</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="text-white text-decoration-none"><i
+                                    class="fas fa-paw pe-3"></i>Presse</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Copyright -->
+        <div class=" p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            <a href=""><img src="images/—Pngtree—facebook and twitter icons_3593305.png" width="150" alt=""></a>
+            <a class="text-white text-decoration-none text-" href=""> © 2023 Copyright:
+                Mentions légales |
+                Convention
+                d’achats du
+                Centre Hospitalier de Wallonie picarde |
+                Moussa GOUBA
+                |
+            </a>
+        </div>
+
+        <!-- Copyright -->
+    </footer>
+
+
+    <!-- End of .container -->
+</footer>
+
+<!-- <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap.min.js"></script> -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script>
+<script src="js/gsap.min.js"></script>
+<script src="js/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+
+
+</body>
+
+</html>
