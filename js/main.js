@@ -76,11 +76,7 @@ timeline.from("div p", 1.5 , {
   x:-20,
   opacity:0
 })
-timeline.from('img' , 1 , {
-  y:-100,
-  opacity:0,
-  stagger:.2
-})
+
 
 gsap.timeline({
   scrollTrigger:{
@@ -107,7 +103,7 @@ h.forEach((h1) => {
         translateY:400,
         stagger:0.2
       })
-
+ 
       // const essa = document.querySelectorAll("a");
 
 
