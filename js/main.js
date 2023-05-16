@@ -68,7 +68,7 @@ gsap.from(".imgr",1 , {
 
 const timeline =gsap.timeline();
 timeline.from("div p", 1.5 , {
-  delay:.5,
+  delay:.2,
   skewX:-10,
   skewY:10,
   stagger:4,
@@ -97,7 +97,7 @@ h.forEach((h1) => {
   h1.addEventListener("mouseleave", function() {
     // Animer la carte pour revenir à sa taille normale
     gsap.to(h1, {scale: 1, duration: 0.3, color:'#ffffff',
-  x:-50})})});
+  x:0})})});
   gsap.from('div a', 1, {
         opacity:.2,
         translateY:400,
